@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Onest", sans-serif;
+
+}
+
+body {
+    font-family: "Onest", sans-serif;
+
+}
+
+
+.sidebar_all {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-block: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: none;
+    z-index: 68;
+    overflow-y: scroll;
+}
+
+.logo {
+    height: 200px;
+    width: 200px;
+    margin-block: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../images/logo.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 50%;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.ll {
+    border-top: 2px solid #534f4f2a;
+}
+
+.links a {
+    border-bottom: 2px solid #534f4f2a;
+    width: 100%;
+    padding: 0 10%;
+    text-decoration: none;
+    padding-block: 10px;
+    color: #000;
+    font-weight: 400;
+    background-color: #f2f2f2;
+}
+
+.links h3 {
+    padding: 0 10%;
+    padding-block: 10px;
+    background-color: #010080;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.links a:hover {
+    background-color: #010080;
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+#toggleButton {
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: absolute;
+    z-index: 332;
+    position: fixed;
+    background-color: #010080;
+    top: 0;
+}
+
+.log {
+    background-color: #010080;
+    color: #fff !important;
+ 
+    border-top: 2px solid #534f4f2a;
+
+}
+
+.log:hover {
+    background-color: #fff;
+}
+
+#toggleButton i {
+    font-size: 20px;
+    color: #fff;
+
+}
+
+.members_grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: 100%;
+}
+
+.member_left {
+    background-color: #010080;
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.member_right {
+    padding: 0 5%;
+    padding-block: 50px;
+}
+
+
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.forms input {
+    width: 100%;
+    height: 50px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding-left: 3%;
+}
+
+.title {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.title h2 {
+    font-size: 45px;
+}
+
+.forms button {
+    height: 50px;
+    background-color: #010080;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+
+input:focus {
+    outline: none;
+}
+
+.download {
+    text-align: center;
+}
+
+.download a {
+    color: #000;
+}
+
+.upload_form {
+    padding: 0 7%;
+}
+
+
+@media only screen and (max-width: 1110px) {
+    .sidebar_all {
+        width: 70%;
+    }
+
+    .members_grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .member_left {
+        display: none;
+    }
+
+    .title h2 {
+        font-size: 30px;
+    }
+
+    .membership_forms_all{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+}

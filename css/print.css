@@ -1,0 +1,84 @@
+body {
+    padding: 0 10%;
+}
+
+.flex-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+}
+
+.flex-details p {
+    padding-top: 10px;
+}
+
+.all {
+    width: 100%;
+    padding: 0 5%;
+    padding-block: 40px;
+    /* border: 2px dashed; */
+    background-color: #f2f4f6;
+    background-image: url(../images/bg.png);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    text-align: left;
+}
+
+.all h2 {
+    text-align: center;
+
+}
+
+
+
+.barcode {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 30px;
+
+}
+
+.barcode img {
+    width: 200px;
+    height: 100px;
+}
+
+.card_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-top: 20px;
+}
+
+.mark {
+    border: 3px dashed;
+    width: 500px;
+    padding: 25px;
+}
+
+@media print {
+    body {
+        -webkit-print-color-adjust: exact;
+        /* For Chrome and Safari */
+        background-color: #ffffff;
+        /* Set the background color */
+    }
+
+    /* Hide the print button when printing */
+    .pprint {
+        display: none;
+    }
+}

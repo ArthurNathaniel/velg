@@ -1,0 +1,9 @@
+CREATE TABLE loan_membership_cards (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    dob DATE NOT NULL,
+    date_joined DATE NOT NULL,
+    occupation VARCHAR(255) NOT NULL,
+    membership_id VARCHAR(255) NOT NULL,
+    phone_number VARCHAR(15) NOT NULL
+);
